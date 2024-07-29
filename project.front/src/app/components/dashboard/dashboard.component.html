@@ -28,4 +28,13 @@
             </tr>
         </tbody>
     </table>
+
+    <ul>
+        @for (item of userList ; track $index) {
+            <li>{{ item.username }}</li>
+            <li>{{ item.password }}</li>
+            } @empty {
+            <li>There are no items.</li>
+            }
+    </ul>
 </div>

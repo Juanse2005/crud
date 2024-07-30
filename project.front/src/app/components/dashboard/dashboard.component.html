@@ -1,40 +1,46 @@
 <div class="container">
-    <h1>Dashboard</h1>
-    <table class="table">
-        <thead class="table-light">
-            <tr>
-                <th>
-                    Id
-                </th>
-                <th>
-                    Username
-                </th>
-                <th>
-                    Password
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Camp1
-                </td>
-                <td>
-                    camp2
-                </td>
-                <td>
-                    camp3
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="row">
+        <div class="col">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-primary float-end">Agregar nuevo usuario</button>
+        </div>
+        <table class="table">
+            <thead class="table-light">
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Username
+                    </th>
+                    <th>
+                        Password
+                    </th>
+                    <th>
 
-    <ul>
-        @for (item of userList ; track $index) {
-            <li>{{ item.username }}</li>
-            <li>{{ item.password }}</li>
-            } @empty {
-            <li>There are no items.</li>
-            }
-    </ul>
-</div>
+                    </th>
+                    <th>
+
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let item of userList">
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.username }}</td>
+                    <td>{{ item.password }}</td>
+                    <td>
+                        <button class="btn btn-warning float-end">Editar</button>
+                    </td>
+                    <td>
+                        <button (click)="deleteUser(item.id)" class="btn btn-danger float-end">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>

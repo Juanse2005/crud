@@ -22,4 +22,7 @@ export class UsersService {
   deleteData(id: number): Observable<void> {
     return this.http.delete<void>(`${this.API_URL}/${id}`);
   }
+  saveData(userApi: usersApi): Observable<any> {
+    return this.http.post<void>(this.API_URL, userApi);
+  }
 }

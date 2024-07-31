@@ -33,10 +33,10 @@
                     <td>{{ item.username }}</td>
                     <td>{{ item.password }}</td>
                     <td>
-                        <button class="btn btn-warning float-end">Edit</button>
+                        <button class="btn btn-warning float-end" [routerLink]="['/edit-user', item.id]">Edit</button>
                     </td>
                     <td>
-                        <button (click)="deleteUser(item.id)" class="btn btn-danger float-end">Delete</button>
+                        <button class="btn btn-danger float-end" (click)="deleteUser(item.id)">Delete</button>
                     </td>
                 </tr>
             </tbody>

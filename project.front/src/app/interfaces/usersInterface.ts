@@ -1,5 +1,5 @@
 export interface usersApi {
-    id: number;
+    id?: number;
     username: string;
     password: string;
 }

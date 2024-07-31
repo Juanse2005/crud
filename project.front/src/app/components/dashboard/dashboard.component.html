@@ -4,7 +4,7 @@
             <h1>Dashboard</h1>
         </div>
         <div class="col-6">
-            <button class="btn btn-primary float-end" [routerLink]="['/add-user']">Agregar nuevo usuario</button>
+            <button class="btn btn-primary float-end" [routerLink]="['/add-user']">Add new user</button>
         </div>
         <table class="table">
             <thead class="table-light">
@@ -33,10 +33,10 @@
                     <td>{{ item.username }}</td>
                     <td>{{ item.password }}</td>
                     <td>
-                        <button class="btn btn-warning float-end">Editar</button>
+                        <button class="btn btn-warning float-end">Edit</button>
                     </td>
                     <td>
-                        <button (click)="deleteUser(item.id)" class="btn btn-danger float-end">Eliminar</button>
+                        <button (click)="deleteUser(item.id)" class="btn btn-danger float-end">Delete</button>
                     </td>
                 </tr>
             </tbody>

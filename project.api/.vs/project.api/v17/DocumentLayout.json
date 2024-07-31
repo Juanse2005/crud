@@ -52,8 +52,7 @@
               "RelativeToolTip": "project.api\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-30T17:30:11.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T17:30:11.393Z"
             },
             {
               "$type": "Document",
@@ -65,8 +64,7 @@
               "RelativeToolTip": "project.api\\Controllers\\UsersController.cs",
               "ViewState": "AQIAAFIAAAAAAAAAAAAcwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T16:00:43.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T16:00:43.277Z"
             },
             {
               "$type": "Document",
@@ -78,8 +76,7 @@
               "RelativeToolTip": "project.api\\Models\\Users.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T16:00:29.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T16:00:29.27Z"
             }
           ]
         }

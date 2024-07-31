@@ -1,24 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <nav>
-      <a routerLink="">Index</a>
-      !
-      <a routerLink="login">Login</a>
-      !
-      <a routerLink="sign-up">Sign up</a>
-      !
-      <a routerLink="dashboard">Dashboard</a>
-      !
-      <a routerLink="add-user">Add-Users</a>
-    </nav>
-  </body>
-  
-</html>
+<nav>
+  <a [routerLink]="['/']">Index</a>
+  /
+  <a [routerLink]="['/login']">Login</a>
+  /
+  <a [routerLink]="['/sign-up']">Sign up</a>
+  /
+  <a [routerLink]="['/dashboard']">Dashboard</a>
+  /
+  <a [routerLink]="['/add-user']">Add edit Users</a>
+</nav>
+
 <router-outlet></router-outlet>

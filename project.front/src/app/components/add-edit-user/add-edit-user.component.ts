@@ -35,6 +35,7 @@ export class AddEditUserComponent {
       this.usersService.getUserById(this.id).subscribe({
         next: (data) => {
           console.log(data);
+          this.eeditUser = data;
           this.addUser.patchValue({
             username: data.username,
             password: data.password
@@ -46,6 +47,43 @@ export class AddEditUserComponent {
       });
     }
   }
+
+  addEditUser() {
+    if (this.eeditUser === undefined) {
+      // Add new user
+      const userApi: usersApi = {
+        username: this.addUser.get('username')?.value,
+        password: this.addUser.get('password')?.value
+      };
+  
+      this.usersService.saveData(userApi).subscribe({
+        next: () => {
+          this.router.navigate(['/dashboard']);
+        },
+        error: (err) => {
+          console.error('Error saving data', err);
+        }
+      });
+    } else {
+      // Update existing user
+      const userApi: usersApi = {
+        id: this.eeditUser.id, // Usar `this.eeditUser.id` para actualizar el usuario existente
+        username: this.addUser.get('username')?.value,
+        password: this.addUser.get('password')?.value
+      };
+  
+      this.usersService.updateData(this.id, userApi).subscribe({
+        next: () => {
+          this.router.navigate(['/dashboard']);
+        },
+        error: (err) => {
+          console.error('Error updating data', err);
+        }
+      });
+    }
+  }
+  
+  
 
   add(): void {
     if (this.addUser.valid) {

@@ -19,13 +19,17 @@ export class UsersService {
   getAll(): Observable<usersApi[]>{
     return this.http.get<usersApi[]>(this.API_URL);
   }
+  getUserById(id: number): Observable<usersApi> {
+    return this.http.get<usersApi>(`${this.API_URL}/${id}`);
+  }
   deleteData(id: number): Observable<void> {
     return this.http.delete<void>(`${this.API_URL}/${id}`);
   }
   saveData(userApi: usersApi): Observable<any> {
-    return this.http.post<void>(this.API_URL, userApi);
+    return this.http.post (this.API_URL, userApi);
   }
-  getUserById(id: number): Observable<usersApi> {
-    return this.http.get<usersApi>(`${this.API_URL}/${id}`);
+  updateData(id: number, userApi: usersApi): Observable<any> {
+    return this.http.put<any>(`${this.API_URL}/${id}`, userApi);
   }
+  
 }

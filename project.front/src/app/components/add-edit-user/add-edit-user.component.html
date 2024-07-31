@@ -1,6 +1,6 @@
 <div class="container">
     <h1>{{action}}</h1>
-    <form [formGroup]="addUser" (ngSubmit)="add()">
+    <form [formGroup]="addUser" (ngSubmit)="addEditUser()">
         <div class="mb-3">
             <label class="form-label"> Username</label>
             <input formControlName="username" type="text" class="form-control" id="username">

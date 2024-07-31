@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { usersApi } from '../../interfaces/usersInterface';
 import { UsersService } from '../../services/users.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-edit-user',
@@ -13,12 +13,38 @@ import { Router } from '@angular/router';
 })
 export class AddEditUserComponent {
   addUser: FormGroup;
+  action = 'Add new user';
+  id = 0;
+  eeditUser: usersApi | undefined;
 
-  constructor(private fb: FormBuilder, private usersService: UsersService, private router: Router) {
+  constructor(private fb: FormBuilder, private usersService: UsersService, private router: Router, private aRoute: ActivatedRoute) {
     this.addUser = this.fb.group({
       username: ['', Validators.required],
       password: ['', Validators.required],
     });
+    this.id = + this.aRoute.snapshot.paramMap.get('id')!;
+  }
+  ngOnInit(): void {
+    this.isEdit();
+  }
+
+  isEdit() {
+
+    if (this.id !== 0) {
+      this.action = 'Edit user';
+      this.usersService.getUserById(this.id).subscribe({
+        next: (data) => {
+          console.log(data);
+          this.addUser.patchValue({
+            username: data.username,
+            password: data.password
+          })
+        },
+        error: (err) => {
+          console.error('Error fetching data', err);
+        }
+      });
+    }
   }
 
   add(): void {

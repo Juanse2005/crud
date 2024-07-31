@@ -25,4 +25,7 @@ export class UsersService {
   saveData(userApi: usersApi): Observable<any> {
     return this.http.post<void>(this.API_URL, userApi);
   }
+  getUserById(id: number): Observable<usersApi> {
+    return this.http.get<usersApi>(`${this.API_URL}/${id}`);
+  }
 }

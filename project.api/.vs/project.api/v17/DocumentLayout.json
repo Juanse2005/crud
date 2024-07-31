@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Program.cs",
               "RelativeDocumentMoniker": "project.api\\Program.cs",
@@ -44,7 +48,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "project.api\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "project.api\\Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T16:34:56.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\appsettings.json",
               "RelativeDocumentMoniker": "project.api\\appsettings.json",
@@ -56,27 +73,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "project.api\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Controllers\\UsersController.cs",
               "RelativeToolTip": "project.api\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAcwFYAAAAAAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAIwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T16:00:43.277Z"
+              "WhenOpened": "2024-07-30T16:00:43.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Models\\Users.cs",
               "RelativeDocumentMoniker": "project.api\\Models\\Users.cs",
               "ToolTip": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Models\\Users.cs",
               "RelativeToolTip": "project.api\\Models\\Users.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T16:00:29.27Z"
+              "WhenOpened": "2024-07-30T16:00:29.27Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,12 +1,14 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1>Dashboard</h1>
+<div class="cont">
+    <div class="cont-back">
+        <div class="row">
+            <div class="col">
+                <h1>DASHBOARD</h1>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-primary float-end" [routerLink]="['/add-user']">Add new user</button>
+            </div>
         </div>
-        <div class="col-6">
-            <button class="btn btn-primary float-end" [routerLink]="['/add-user']">Add new user</button>
-        </div>
-        <table class="table">
+        <table class="table ">
             <thead class="table-light">
                 <tr>
                     <th>
@@ -26,7 +28,6 @@
                     </th>
                 </tr>
             </thead>
-
             <tbody>
                 <tr *ngFor="let item of userList">
                     <td>{{ item.id }}</td>
@@ -40,6 +41,6 @@
                     </td>
                 </tr>
             </tbody>
-
         </table>
     </div>
+</div>

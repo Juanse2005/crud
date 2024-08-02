@@ -31,7 +31,8 @@ export class SignUpComponent {
 
       this.usersService.saveData(userApi).subscribe({
         next: () => {
-          this.router.navigate(['/login']);
+          this.router.navigate(['/home'])
+          alert('User created successfully!');
         },
         error: (err) => {
           console.error('Error fetching data', err);

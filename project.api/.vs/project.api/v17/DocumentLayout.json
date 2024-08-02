@@ -42,8 +42,7 @@
               "RelativeToolTip": "project.api\\Program.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAADkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T15:08:56.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T15:08:56.322Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "project.api\\Models\\Users.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T14:29:06.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T14:29:06.259Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "project.api\\Interfaces\\IAuthService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T14:23:32.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T14:23:32.229Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "project.api\\Services\\Class.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAUwCQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T14:20:16.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T14:20:16.812Z"
             }
           ]
         }

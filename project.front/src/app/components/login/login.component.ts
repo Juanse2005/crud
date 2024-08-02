@@ -41,7 +41,6 @@ export class LoginComponent {
       });
     } else {
       console.error('Invalid form');
-      this.router.navigate(['/login']);
     }
   }
   

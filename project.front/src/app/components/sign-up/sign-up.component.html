@@ -1,16 +1,29 @@
-<div class="container">
-    <h1>Registration</h1>
-    <form [formGroup]="addUser" (ngSubmit)="add()">
-        <div class="mb-3">
-            <label class="form-label"> Username</label>
-            <input formControlName="username" type="text" class="form-control" id="username">
+<a data-bs-toggle="modal" data-bs-target="#exampleModal"
+    data-bs-whatever="@mdo" id="buttonlog" href="">Sign up</a>
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Registration form</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form [formGroup]="addUser" (ngSubmit)="add()">
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Username</label>
+                        <input formControlName="username" type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Password</label>
+                        <input formControlName="password" type="text" class="form-control" id="password" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Sign up</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Password</label>
-            <input formControlName="password" type="text" class="form-control" id="password">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-    <p>Already have an account?</p>
-    <a href="login">Login</a>
+    </div>
 </div>

@@ -6,11 +6,12 @@ import { AddEditUserComponent } from './components/add-edit-user/add-edit-user.c
 import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [ 
+    {path: ' ', component: HomeComponent},
     {path: 'login', component: LoginComponent},
     {path: 'sign-up', component: SignUpComponent},
     {path: 'dashboard', component: DashboardComponent},
     {path: 'add-user', component: AddEditUserComponent },
     {path: 'edit-user/:id', component: AddEditUserComponent },
     {path: 'home', component: HomeComponent },
-    { path: '', redirectTo: '/home', pathMatch: 'full' }
+    { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];

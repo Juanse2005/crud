@@ -35,7 +35,6 @@ export class LoginComponent {
         },
         error: (err) => {
           console.error('Error logging in', err);
-          // Mostrar mensaje de error al usuario
           alert('Invalid credentials. Please try again.');
         }
       });

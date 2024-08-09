@@ -4,11 +4,12 @@ import { usersApi } from '../../interfaces/usersInterface';
 import { UsersService } from '../../services/users.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
+import { NavComponent } from '../nav/nav.component';
 
 @Component({
   selector: 'app-add-edit-user',
   standalone: true,
-  imports: [ReactiveFormsModule,RouterModule],
+  imports: [ReactiveFormsModule,RouterModule, NavComponent],
   templateUrl: './add-edit-user.component.html',
   styleUrls: ['./add-edit-user.component.css']
 })
@@ -68,7 +69,7 @@ export class AddEditUserComponent {
     } else {
       // Update existing user
       const userApi: usersApi = {
-        id: this.eeditUser.id, // Usar `this.eeditUser.id` para actualizar el usuario existente
+        id: this.eeditUser.id, 
         username: this.addUser.get('username')?.value,
         password: this.addUser.get('password')?.value
       };

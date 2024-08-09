@@ -3,13 +3,14 @@ import { UsersService } from '../../services/users.service';
 import { usersApi } from '../../interfaces/usersInterface';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { NavComponent } from '../nav/nav.component';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
-  imports: [CommonModule, RouterModule] 
+  imports: [CommonModule, RouterModule, NavComponent] 
 })
 export class DashboardComponent implements OnInit {
 

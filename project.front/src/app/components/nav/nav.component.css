@@ -1,0 +1,10 @@
+nav{
+    background: white;
+}
+.navbar-brand {
+    font-size: 2rem;
+    background: linear-gradient(to right, #0044c2, rgba(177, 195, 255, 0.562)); 
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}

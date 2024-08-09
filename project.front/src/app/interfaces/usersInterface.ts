@@ -1,5 +1,6 @@
 export interface usersApi {
     id?: number;
-    username: string;
+    email: string;
+    username?: string;
     password: string;
 }

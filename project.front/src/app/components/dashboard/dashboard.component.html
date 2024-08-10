@@ -1,5 +1,5 @@
 <app-nav></app-nav> 
-<div class="cont">
+<div class="container-flex">
     <div class="cont-back">
         <div class="row">
             <div class="col">
@@ -9,38 +9,19 @@
                 <button class="btn btn-primary float-end" [routerLink]="['/add-user']">Add new user</button>
             </div>
         </div>
-        <table class="table ">
+        <table id="table" class="table">
             <thead class="table-light">
                 <tr>
-                    <th>
-                        ID
-                    </th>
-                    <th>
-                        Username
-                    </th>
-                    <th>
-                        Password
-                    </th>
-                    <th>
-
-                    </th>
-                    <th>
-
-                    </th>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let item of userList">
-                    <td>{{ item.id }}</td>
-                    <td>{{ item.username }}</td>
-                    <td>{{ item.password }}</td>
-                    <td>
-                        <button class="btn btn-warning float-end" [routerLink]="['/edit-user', item.id]">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-danger float-end" (click)="deleteUser(item.id)">Delete</button>
-                    </td>
-                </tr>
+                <!-- Los datos se cargarán dinámicamente aquí -->
             </tbody>
         </table>
     </div>

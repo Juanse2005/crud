@@ -1,9 +1,11 @@
 <h1>LOGIN</h1>
 <form [formGroup]="loginForm" (ngSubmit)="login()">
     <div class="mb-3">
-        <!-- type="email"-->
         <label class="form-label">Email</label>
-        <input formControlName="username" type="text" class="form-control" id="username" required>
+        <input type="email" class="form-control" id="email" formControlName="email" required>
+        <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+            <small class="text-danger">Email is required and must be a valid email address.</small>
+        </div>
     </div>
     <div class="mb-3">
         <label class="form-label">Password</label>

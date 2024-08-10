@@ -3,6 +3,10 @@
         <h1>{{action}}</h1>
         <form [formGroup]="addUser" (ngSubmit)="addEditUser()">
             <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input formControlName="email" type="text" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
                 <label class="form-label">Username</label>
                 <input formControlName="username" type="text" class="form-control" id="username">
             </div>
@@ -11,8 +15,7 @@
                 <input formControlName="password" type="text" class="form-control" id="password">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-            <button class="btn btn-secondary" [routerLink]="['/dashboard']">Back</button>
+            <a class="btn btn-secondary" [routerLink]="['/dashboard']">Back</a>
         </form>
-        
     </div>
 </div>

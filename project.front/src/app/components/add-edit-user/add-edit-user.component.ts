@@ -21,6 +21,7 @@ export class AddEditUserComponent {
 
   constructor(private fb: FormBuilder, private usersService: UsersService, private router: Router, private aRoute: ActivatedRoute) {
     this.addUser = this.fb.group({
+      email: ['', Validators.required],
       username: ['', Validators.required],
       password: ['', Validators.required],
     });
@@ -39,6 +40,7 @@ export class AddEditUserComponent {
           console.log(data);
           this.eeditUser = data;
           this.addUser.patchValue({
+            email: data.email,
             username: data.username,
             password: data.password
           })
@@ -54,6 +56,7 @@ export class AddEditUserComponent {
     if (this.eeditUser === undefined) {
       // Add new user
       const userApi: usersApi = {
+        email: this.addUser.get('email')?.value,
         username: this.addUser.get('username')?.value,
         password: this.addUser.get('password')?.value
       };
@@ -69,7 +72,8 @@ export class AddEditUserComponent {
     } else {
       // Update existing user
       const userApi: usersApi = {
-        id: this.eeditUser.id, 
+        id: this.eeditUser.id,
+        email: this.addUser.get('email')?.value,
         username: this.addUser.get('username')?.value,
         password: this.addUser.get('password')?.value
       };
@@ -90,6 +94,7 @@ export class AddEditUserComponent {
   add(): void {
     if (this.addUser.valid) {
       const userApi: usersApi = {
+        email: this.addUser.get('email')?.value,
         username: this.addUser.get('username')?.value,
         password: this.addUser.get('password')?.value
       };

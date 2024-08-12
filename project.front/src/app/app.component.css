@@ -1,5 +1,11 @@
 .back {
     background: linear-gradient(90deg, #5C83BA, #C4D2EC, #f2f1ed);
-    min-height: 100vh; 
+    width: 100vw; 
+    height: 100vh;
     margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    position: absolute;
+    top: 0;
+    left: 0;
 }

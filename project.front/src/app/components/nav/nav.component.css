@@ -1,5 +1,6 @@
 nav{
     background: white;
+    margin-bottom: 1rem;
 }
 .navbar-brand {
     font-size: 2rem;
@@ -7,4 +8,8 @@ nav{
     -webkit-background-clip: text; 
     background-clip: text;
     color: transparent;
+}
+#logout{
+    color: rgb(255, 0, 0);
+    font-weight: bold; 
 }

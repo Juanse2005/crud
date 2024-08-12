@@ -1,18 +1,27 @@
 <h1>LOGIN</h1>
 <form [formGroup]="loginForm" (ngSubmit)="login()">
-    <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" formControlName="email" required>
-        <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
-            <small class="text-danger">Email is required and must be a valid email address.</small>
-        </div>
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" class="form-control" id="lemail" formControlName="lemail" required>
+    <div *ngIf="loginForm.get('lemail')?.invalid && (loginForm.get('lemail')?.dirty || loginForm.get('lemail')?.touched)">
+      <small class="text-danger">Email is required and must be a valid email address.</small>
     </div>
-    <div class="mb-3">
-        <label class="form-label">Password</label>
-        <input formControlName="password" type="password" class="form-control" id="password" required>
+  </div>
+  
+  <div class="mb-3">
+    <label class="form-label">Password</label>
+    <input [type]="passwordType" class="form-control" id="lpassword" formControlName="lpassword" required>
+    <div *ngIf="loginForm.get('lpassword')?.invalid && (loginForm.get('lpassword')?.dirty || loginForm.get('lpassword')?.touched)">
+      <small class="text-danger">Password is required.</small>
     </div>
-    <div class="butt">
-        <button type="submit" class="btn btn-primary">Login</button>
-    </div>
-</form>
+  </div>
 
+  <div class="mb-3">
+    <input type="checkbox" id="lshowPassword" (change)="ltogglePasswordVisibility($event)">
+    <label for="lshowPassword">Show Password</label>
+  </div>
+  
+  <div class="butt">
+    <button type="submit" class="btn btn-primary">Login</button>
+  </div>
+</form>

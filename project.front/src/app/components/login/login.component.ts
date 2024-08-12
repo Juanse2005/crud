@@ -1,19 +1,22 @@
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { usersApi } from '../../interfaces/usersInterface';
-import { CommonModule } from '@angular/common';
 import { UsersService } from '../../services/users.service';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']  
+  styleUrls: ['./login.component.css'],
+
+
 })
 export class LoginComponent {
   loginForm: FormGroup;
+  passwordType: string = 'password';
 
   constructor(
     private fb: FormBuilder,
@@ -21,24 +24,21 @@ export class LoginComponent {
     private router: Router
   ) {
     this.loginForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]], 
-      password: ['', Validators.required]
+      lemail: ['', [Validators.required, Validators.email]],
+      lpassword: ['', Validators.required]
     });
   }
-
-  ngOnInit(): void {}
 
   login(): void {
     if (this.loginForm.valid) {
       const userApi: usersApi = {
-        email: this.loginForm.get('email')?.value,
-        password: this.loginForm.get('password')?.value
+        email: this.loginForm.get('lemail')?.value,
+        password: this.loginForm.get('lpassword')?.value
       };
 
       this.usersService.login(userApi).subscribe({
         next: (response) => {
           console.log('Login successful', response);
-          // Navegar al dashboard sin recargar la página
           this.router.navigate(['/dashboard']);
         },
         error: (err) => {
@@ -49,5 +49,9 @@ export class LoginComponent {
     } else {
       alert('Invalid form');
     }
+  }
+
+  ltogglePasswordVisibility(event: any): void {
+    this.passwordType = event.target.checked ? 'text' : 'password';
   }
 }

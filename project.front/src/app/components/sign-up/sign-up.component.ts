@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors } from '@angular/forms';
-import { CommonModule } from '@angular/common'; // Importa CommonModule
+import { CommonModule } from '@angular/common';
 import { UsersService } from '../../services/users.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule], // Agrega CommonModule aquí
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.css']
 })
@@ -23,8 +23,6 @@ export class SignUpComponent {
       confirmPassword: ['', [Validators.required]]
     }, { validators: this.passwordMatchValidator });
   }
-
-  ngOnInit(): void { }
 
   add(): void {
     if (this.addUser.valid) {

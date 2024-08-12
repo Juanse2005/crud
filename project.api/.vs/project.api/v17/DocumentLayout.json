@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{370C73BC-D21A-4921-A95A-AE1F16BC1638}|project.persistence\\Persistence.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{370C73BC-D21A-4921-A95A-AE1F16BC1638}|project.persistence\\Persistence.csproj|solutionrelative:project.persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\services\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\services\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\project.api\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{309AD422-491A-45F7-86A4-45C42F5A7665}|project.api\\project.api.csproj|solutionrelative:project.api\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF1BB7CE-636C-4058-AAF0-E0CCE001718A}|domain\\Domain.csproj|c:\\users\\juan\\documents\\proyectos angular\\crud\\project.api\\domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF1BB7CE-636C-4058-AAF0-E0CCE001718A}|domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,64 +22,29 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Program.cs",
-              "RelativeDocumentMoniker": "project.api\\Program.cs",
-              "ToolTip": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Program.cs",
-              "RelativeToolTip": "project.api\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAADkAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\domain\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "domain\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\domain\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "domain\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T15:08:56.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "project.api\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "project.api\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T14:32:00.017Z",
+              "WhenOpened": "2024-08-09T01:47:12.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "project.api\\Models\\Users.cs",
-              "ToolTip": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Models\\Users.cs",
-              "RelativeToolTip": "project.api\\Models\\Users.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.persistence\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "project.persistence\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.persistence\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "project.persistence\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T14:29:06.259Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "project.api\\Interfaces\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "project.api\\Interfaces\\IAuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T14:23:32.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class.cs",
-              "DocumentMoniker": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Services\\Class.cs",
-              "RelativeDocumentMoniker": "project.api\\Services\\Class.cs",
-              "ToolTip": "C:\\Users\\Juan\\Documents\\Proyectos Angular\\crud\\project.api\\project.api\\Services\\Class.cs",
-              "RelativeToolTip": "project.api\\Services\\Class.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAUwCQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T14:20:16.812Z"
+              "WhenOpened": "2024-08-08T20:33:25.055Z",
+              "EditorCaption": ""
             }
           ]
         }

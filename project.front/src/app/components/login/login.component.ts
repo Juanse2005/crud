@@ -1,33 +1,41 @@
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { usersApi } from '../../interfaces/usersInterface';
 import { UsersService } from '../../services/users.service';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrls: ['./login.component.css'],
+
+
 })
 export class LoginComponent {
   loginForm: FormGroup;
-  constructor(private fb: FormBuilder, private usersService: UsersService, private router: Router) {
+  passwordType: string = 'password';
+
+  constructor(
+    private fb: FormBuilder,
+    private usersService: UsersService,
+    private router: Router
+  ) {
     this.loginForm = this.fb.group({
-      username: ['', Validators.required],
-      password: ['', Validators.required],
+      lemail: ['', [Validators.required, Validators.email]],
+      lpassword: ['', Validators.required]
     });
   }
-  ngOnInit(): void {
-  }
+
   login(): void {
     if (this.loginForm.valid) {
       const userApi: usersApi = {
-        username: this.loginForm.get('username')?.value,
-        password: this.loginForm.get('password')?.value
+        email: this.loginForm.get('lemail')?.value,
+        password: this.loginForm.get('lpassword')?.value
       };
-  
+
       this.usersService.login(userApi).subscribe({
         next: (response) => {
           console.log('Login successful', response);
@@ -35,14 +43,15 @@ export class LoginComponent {
         },
         error: (err) => {
           console.error('Error logging in', err);
-          // Mostrar mensaje de error al usuario
           alert('Invalid credentials. Please try again.');
         }
       });
     } else {
-      console.error('Invalid form');
+      alert('Invalid form');
     }
   }
-  
-  
+
+  ltogglePasswordVisibility(event: any): void {
+    this.passwordType = event.target.checked ? 'text' : 'password';
+  }
 }

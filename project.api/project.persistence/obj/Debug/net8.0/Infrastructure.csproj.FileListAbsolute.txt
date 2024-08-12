@@ -1,0 +1,6 @@
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.persistence\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.persistence\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.persistence\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.persistence\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.persistence\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.persistence\obj\Debug\net8.0\Infrastructure.sourcelink.json

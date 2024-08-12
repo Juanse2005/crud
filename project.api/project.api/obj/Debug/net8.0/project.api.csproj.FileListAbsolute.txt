@@ -14,7 +14,6 @@ C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\obj\Debug
 C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\obj\Debug\net8.0\project.api.AssemblyInfoInputs.cache
 C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\obj\Debug\net8.0\project.api.AssemblyInfo.cs
 C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\obj\Debug\net8.0\project.api.csproj.CoreCompileInputs.cache
-C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\obj\Debug\net8.0\project.api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\obj\Debug\net8.0\project.api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\obj\Debug\net8.0\project.api.sourcelink.json
 C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\obj\Debug\net8.0\staticwebassets.build.json
@@ -230,3 +229,11 @@ C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug
 C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug\net8.0\MediatR.dll
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug\net8.0\Domain.dll
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug\net8.0\Persistence.dll
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug\net8.0\Domain.pdb
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug\net8.0\Persistence.pdb
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\obj\Debug\net8.0\project.api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Juan\Documents\Proyectos Angular\crud\project.api\project.api\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

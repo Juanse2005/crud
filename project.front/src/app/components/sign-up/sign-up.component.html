@@ -1,26 +1,51 @@
-<a data-bs-toggle="modal" data-bs-target="#exampleModal"
-    data-bs-whatever="@mdo" id="buttonlog" href="">Sign up</a>
-<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" id="buttonlog" href="#">Sign up</a>
 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Registration form</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-
             <div class="modal-body">
                 <form [formGroup]="addUser" (ngSubmit)="add()">
                     <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Username</label>
-                        <input formControlName="username" type="text" class="form-control" id="username" required>
+                        <label for="email" class="col-form-label">Email</label>
+                        <input type="email" class="form-control" id="email" formControlName="email" required>
+                        <div *ngIf="addUser.get('email')?.invalid && (addUser.get('email')?.dirty || addUser.get('email')?.touched)">
+                            <small class="text-danger">Email is required and must be a valid email address.</small>
+                        </div>
                     </div>
                     <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Password</label>
-                        <input formControlName="password" type="text" class="form-control" id="password" required>
+                        <label for="username" class="col-form-label">Username</label>
+                        <input type="text" class="form-control" id="username" formControlName="username" required>
+                        <div *ngIf="addUser.get('username')?.invalid && (addUser.get('username')?.dirty || addUser.get('username')?.touched)">
+                            <small class="text-danger">Username is required.</small>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="col-form-label">Password</label>
+                        <input [type]="passwordType" class="form-control" id="password" formControlName="password" required>
+                        <div *ngIf="addUser.get('password')?.invalid && (addUser.get('password')?.dirty || addUser.get('password')?.touched)">
+                            <small class="text-danger" *ngIf="addUser.get('password')?.hasError('required')">Password is required.</small>
+                            <small class="text-danger" *ngIf="addUser.get('password')?.hasError('minlength')">Password must be at least 8 characters long.</small>
+                            <small class="text-danger" *ngIf="addUser.get('password')?.hasError('passwordStrength')">Password must contain at least one special character.</small>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="col-form-label">Confirm Password</label>
+                        <input [type]="passwordType" class="form-control" id="confirmPassword" formControlName="confirmPassword" required>
+                        <div *ngIf="addUser.get('confirmPassword')?.invalid && (addUser.get('confirmPassword')?.dirty || addUser.get('confirmPassword')?.touched)">
+                            <small class="text-danger" *ngIf="addUser.hasError('passwordMismatch')">Passwords must match.</small>
+                            <small class="text-danger" *ngIf="addUser.get('confirmPassword')?.hasError('required')">Confirm Password is required.</small>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="checkbox" id="showPassword" (change)="togglePasswordVisibility($event)">
+                        <label for="showPassword">Show Password</label>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Sign up</button>
+                        <button type="submit" class="btn btn-primary" [disabled]="addUser.invalid">Sign up</button>
                     </div>
                 </form>
             </div>

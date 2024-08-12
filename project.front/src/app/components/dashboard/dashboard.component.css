@@ -1,8 +1,9 @@
-.cont {
-    display: flex; 
+.container-flex {
+    display: flex;
     justify-content: center; 
     align-items: center;
-    height: 50rem;
+    padding-right: 15px; 
+    padding-left: 15px; 
 }
 
 .cont-back {

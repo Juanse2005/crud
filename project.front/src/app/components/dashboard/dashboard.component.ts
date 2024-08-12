@@ -49,8 +49,8 @@ export class DashboardComponent implements OnInit {
             user.email,
             user.username,
             user.password,
-            `<button class="btn btn-warning edit-btn" data-id="${user.id}">Edit</button>`,
-            `<button class="btn btn-danger delete-btn" data-id="${user.id}">Delete</button>`
+            `<button class="btn btn-warning edit-btn float-end" data-id="${user.id}">Edit</button>`,
+            `<button class="btn btn-danger delete-btn float-end" data-id="${user.id}">Delete</button>`
           ]);
           table.rows.add(data).draw();
 
@@ -85,7 +85,7 @@ export class DashboardComponent implements OnInit {
     if (id !== undefined) {
       this.usersService.deleteData(id).subscribe({
         next: () => {
-          this.getData();
+          window.location.reload();
         },
         error: (err) => {
           console.error('Error al eliminar el usuario', err);
